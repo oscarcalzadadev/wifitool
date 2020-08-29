@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <title>Wifi Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="wifi-process.php" method="POST">
+        <h1 class="title">Funeral Info</h1>
+        <div class="input_div">
+          <label for="locations" class="label">Location Name</label>
+          <input type="text" required name="locations" class="input" id="locations">
+        </div>
+        <div class="input_div">
+            <label for="wifis" class="label">Wifi Name</label>
+            <input type="text" required name="wifis" class="input" id="wifis">
+          </div>
+          <div class="input_div">
+            <label for="passwords" class="label">Password</label>
+            <input type="text" required name="passwords" class="input" id="passwords">
+          </div>
+          <div class="input_div">
+            <label for="ratings" class="label">Rating</label>
+            <input type="number" required min="1" max="10" name="ratings" class="input" id="ratings">
+          </div>
+          <div class="input_div">
+            <label for="notes" class="label">Notes</label>
+            <textarea name="notes" required class="input" id="notes"></textarea>
+          </div>
+          <div class="input_div">
+            <label for="lastUsed" class="label" style="margin-left: 38px;">Last Used</label>
+            <input type="date" required name="lastUsed" class="input" id="lastUsed">
+          </div> 
+          <input type="submit" class="submit" placeholder="submit">
+    </form>
+  
+</body>
+</html>
